@@ -1,0 +1,101 @@
+{
+  "id": "ma",
+  "letters": [
+    "М",
+    "А"
+  ],
+  "syllable": "МА",
+  "audio": "res://assets/audio/ma.wav",
+  "prompt": "Послушай. Соедини звуки и попробуй прочитать.",
+  "bonus": {
+    "word": "МАМА",
+    "chunks": [
+      "МА",
+      "МА"
+    ],
+    "audio": "res://assets/audio/mama.wav"
+  },
+  "cards": {
+    "МА": {
+      "id": "МА",
+      "letters": [
+        "М",
+        "А"
+      ],
+      "syllable": "МА",
+      "audio": "res://assets/audio/ma.wav"
+    },
+    "МО": {
+      "id": "МО",
+      "letters": [
+        "М",
+        "О"
+      ],
+      "syllable": "МО",
+      "audio": "res://assets/audio/mo.wav"
+    },
+    "МУ": {
+      "id": "МУ",
+      "letters": [
+        "М",
+        "У"
+      ],
+      "syllable": "МУ",
+      "audio": "res://assets/audio/mu.wav"
+    }
+  },
+  "checkpoints": [
+    {
+      "x": 2050,
+      "blob_x": 1870,
+      "glyph": "О",
+      "card": "МО",
+      "guided": true,
+      "kind": "lantern",
+      "title": "Новый слог: зажжём маяк",
+      "reward": "Маяк горит. Лодочка нашла путь!"
+    },
+    {
+      "x": 2550,
+      "glyph": "",
+      "card": "МО",
+      "guided": false,
+      "kind": "lift",
+      "title": "МО поднимет почтовый лифт",
+      "reward": "Посылка поднялась к окошку!",
+      "choices": [
+        "МА",
+        "МО"
+      ]
+    },
+    {
+      "x": 3050,
+      "blob_x": 2870,
+      "glyph": "У",
+      "card": "МУ",
+      "guided": true,
+      "kind": "lantern",
+      "title": "Новый слог: разбудим фонари",
+      "reward": "Фонари проснулись. Во дворе светло!"
+    },
+    {
+      "x": 3550,
+      "glyph": "",
+      "card": "МУ",
+      "guided": false,
+      "kind": "lift",
+      "title": "МУ откроет путь к хранителю",
+      "reward": "Последняя посылка у получателя!",
+      "choices": [
+        "МА",
+        "МО",
+        "МУ"
+      ]
+    }
+  ],
+  "review": [
+    "МА",
+    "МО",
+    "МУ"
+  ]
+}
