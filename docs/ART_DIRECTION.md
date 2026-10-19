@@ -1,0 +1,27 @@
+# Направление графики
+
+Использован встроенный image_gen. Файлы: assets/art/canal_city.png и assets/art/hero_sheet.png. Это игровые ассеты, встроенные в Godot, а не статичный макет экрана.
+
+## Промпт фона
+
+Use case: stylized-concept. Production game asset for PIXWAVE Godot side-scrolling 2D pixel-art platformer for age 6. Create a single ultrawide panoramic background, 3:1 aspect, crisp richly detailed pixel art, no UI, no text, no characters. Evening canal-side magical bookshop district inspired by 16-bit adventure games: dark navy brick shopfronts on left and right, warm amber glowing windows, red-orange awnings, potted plants, hanging lanterns, bridge and layered distant fantasy city towers in center, vermilion sunset sky transitioning dark plum at top, water reflections. Welcoming adventurous and luminous, not threatening. Straight-on orthographic side view, level continuous stone walkway top at exactly 78% image height spanning entire width, bottom 22% dark canal masonry/water. Central 50% spacious vista with distant bridge, richly detailed buildings at outer thirds, keep route readable and brighter highlights around shops. Original environment not copied from any existing game. Sharp pixel clusters, limited warm amber/coral and midnight teal palette, no blur, no watermark. This will be used directly as game scenery, not a mockup.
+
+Генерация расположила дорожку выше заданного; изображение масштабируется в игре до 2304×760, чтобы совместить её с физическим полом y=500. Низ изображения обрезается окном, файл не редактировался.
+
+## Промпт персонажа
+
+Use case: stylized-concept. Asset type: production transparent pixel-art character spritesheet for Godot PIXWAVE. One original friendly young boy adventurer with spiky black hair, expressive large eyes, red zip jacket with cream stripe on sleeves, dark trousers, dark sneakers with cream soles, small dark backpack. Side view facing RIGHT in every frame, rich 16-bit pixel art shading, dark ink outline, crisp pixel clusters. EXACTLY 8 full-body frames arranged equal 4 columns by 2 rows in a 2:1 landscape canvas; each cell same size with generous transparent margins; all feet baseline at 88% of cell height, consistent character height and scale. First row four successive running poses (left stride, passing, right stride, passing). Second row: running extension, running passing, airborne jump knees tucked, joyful victory arm raised. No ground, no shadows outside sprites, no text, no labels, no grid, no scenery, no weapons. Preserve genuinely transparent background throughout, do not draw checkerboard. Refined game-ready sprite sheet, appealing expressive silhouette like a polished indie pixel platformer; original character not from existing IP.
+
+Кадры нарезаются средствами Sprite2D (4×2). Бег, прыжок и победа подключены к состояниям героя. Кадр покоя пока использует позу из бега; отдельная idle-анимация и очистка пограничных пикселей ещё не выполнены.
+
+## Кляксы и Чернильный хранитель
+
+Файл: `assets/art/ink_characters.png`. Встроенный image_gen. В Godot используются четыре клетки 2×2 для двух состояний маленькой кляксы и двух состояний хранителя; покачивание и реакция на импульс задаются кодом.
+
+Промпт создания:
+
+Production transparent pixel-art game sprite sheet for PIXWAVE, matching a richly shaded midnight navy and amber 16-bit canal-city platformer. EXACT 2 columns by 2 rows, four equally spaced cells with transparent margins and full bodies, no grid, no text, no ground, no shadows outside sprites. Top left: small mischievous cute living ink blob with two amber eyes, a broad silly grin, tiny arms, droplets like ears, dark violet and teal ink shading, holds a small cream torn paper scrap with NO lettering. Top right: same small ink blob comically squashed flat, surprised eyes, droplets but no violence. Bottom left: much larger friendly boss Ink Postmaster, a round squat purple-black ink creature with ornate tiny brass postman cap, large expressive amber eyes, two large inky arms, cream paper scraps tucked in its body, playful theatrical villain, children age6 safe not scary. Bottom right: same boss smiling delighted with open arms and a golden cream envelope held up, festive postmaster cap, transformed friendly expression. All subjects front three-quarter facing left so they face approaching hero, crisp hand-crafted pixel clusters, detailed strong readable silhouettes, warm amber rim light, original designs no borrowed characters. Four assets all inside their own equal cells. Genuine alpha transparency.
+
+Промпт исправления сетки:
+
+Edit this production sprite sheet. Preserve all four character designs and expressions. REPACK into a perfectly SQUARE 2x2 sheet of four EQUAL SQUARE CELLS. Each full character must fit entirely INSIDE its own cell with at least 12% transparent margin on ALL FOUR sides. The boss cap and hands must not cross cell boundaries. All subjects, even large bosses, are the same normalized maximum bounding size within their cells; the game will scale them separately. Top left normal small blob, top right squashed blob, bottom left postmaster boss, bottom right happy postmaster holding envelope. REMOVE ALL BACKGROUND COLORS AND ALL BACKGROUND GLOWS. True transparent alpha everywhere outside the characters, no dark or colored backdrop, no halo or vignette. No text, no grid lines. Crisp pixel art, keep detailed features and colors from input. It is essential that cropping at exactly 50% of image width and height will yield four COMPLETE characters.
