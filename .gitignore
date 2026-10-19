@@ -1,0 +1,10 @@
+.godot/
+.DS_Store
+.env
+.env.*
+*.log
+*.apk
+*.aab
+*.keystore
+*.jks
+export_credentials.cfg

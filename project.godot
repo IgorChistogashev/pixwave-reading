@@ -1,0 +1,16 @@
+config_version=5
+[application]
+config/name="PIXWAVE — первый слог"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.svg"
+[display]
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/stretch/mode="canvas_items"
+window/handheld/orientation=0
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/vram_compression/import_etc2_astc=true
+[input_devices]
+pointing/emulate_touch_from_mouse=true
